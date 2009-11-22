@@ -1,0 +1,9 @@
+-- Time-stamp: <2006-01-12, 14:01>
+
+Installation instructions for the Prolog MCFG parsing library
+======================================================================
+
+The library should work without modifications
+
+The supported Prolog versions are Sicstus and SWI
+

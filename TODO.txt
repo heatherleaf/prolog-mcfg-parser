@@ -1,0 +1,54 @@
+-- Time-stamp: <2005-12-09, 21:35>
+
+ToDo list for the Prolog MCFG parsing library
+======================================================================
+
+Please mail me (peb@cs.chalmers.se) with bug reports and/or 
+suggestions of enhancements, and I'll put them into this list
+
+
+----------------------------------------------------------------------
+-- General additions
+
+* The incremental chart parsing algorithm (from sec 4.6 of Ljunglöf, 2004)
+
+* Extend the library to a general parsing library 
+  (i.e. add some context-free parsing algorithms, 
+  and perhaps the context-free approximation algorithm)
+
+----------------------------------------------------------------------
+-- Documentation
+
+* Comment the Prolog code, preferrably by using PrologDoc
+
+
+----------------------------------------------------------------------
+-- Changes to recognize_active.pl
+
+* Better indexing (key hashing) of parse items
+
+* Add topdown filtering (aka left-corner), 
+  for this we have to add left-corner tables to 
+  optimize_active.pl
+
+
+----------------------------------------------------------------------
+-- Changes to tree.pl
+
+* Add visualization predicates for syntax trees
+  (to text, latex, html)
+
+
+----------------------------------------------------------------------
+-- Changes to forest.pl
+
+* unify_forests/2 has a very inefficient definition
+* apply_prof/3 has too
+
+
+----------------------------------------------------------------------
+-- Changes to mcfg.pl
+
+* GFC linearizations could very probably be more efficient
+  (if necessary - i.e. if someone feels the need for it)
+

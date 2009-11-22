@@ -1,0 +1,5 @@
+i FragmentEnglish.gf
+i FragmentSwedish.gf
+pm -printer=gfc-prolog  | wf fragment_gfc.pl
+pm -printer=mcfg-prolog | wf fragment_mcfg.pl
+
